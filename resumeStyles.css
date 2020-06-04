@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+* {
+    font-family: "Arvo", sans-serif;
+}
+
+.navbar li, a {
+    font-family: "Arvo", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+}
+
+.navbar {
+    width: 99%;
+    text-align: center;
+    background-color: black;
+    position: fixed;
+    top: 10px;
+}
+.navbar ul {
+    display: inline-block;
+    margin: 20px;
+    padding: 2px;
+    background-color: black;
+}
+.navbar li {
+    display: inline-block;
+    padding: 0px 50px;
+    background-color: black;
+}
+.navbar li a {
+    transition: all 0.3s ease 0s;
+}
+
+.navbar li a:hover {
+    color: #0088A9;
+}
+
+body {
+    background-image: url("https://photos.letsroam.com/scavenger_hunt_locations/University_of_Virginia_Scavenger_Hunt_Charlottesville%2C_VA%2C_USA_Virginia_team_building_1565899526_large.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+img {
+    margin-top: 100px;
+}
