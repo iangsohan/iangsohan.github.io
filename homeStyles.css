@@ -1,89 +1,104 @@
-@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
-
-* {
-    font-family: "Arvo", sans-serif;
-}
-
-.navbar li, a {
-    font-family: "Arvo", sans-serif;
-    font-weight: 500;
-    font-size: 24px;
-    color: white;
-    text-decoration: none;
-    background-color: black;
-}
-
-.navbar {
-    width: 99%;
-    text-align: center;
-    background-color: black;
-    position: fixed;
-    top: 10px;
-}
-.navbar ul {
-    display: inline-block;
-    margin: 20px;
-    padding: 2px;
-    background-color: black;
-}
-.navbar li {
-    display: inline-block;
-    padding: 0px 50px;
-    background-color: black;
-}
-.navbar li a {
-    transition: all 0.3s ease 0s;
-}
-
-.navbar li a:hover {
-    color: #0088A9;
-} 
+@import "navbar.css";
 
 body {
-    background-image: url("https://lh3.googleusercontent.com/IJk7GRJgg5LcCED4wO2Pw-JfOp7idhUdh0lnpTGmoN8JiUbr1O9aCZU_EbfdiO2RO-XJBFNsrZMxucONvb_WK3H3JdZ53hp0xH8vFxOvusMUQEVrQoU-MlZ46qELLfcLNkjSM6yYMIGIKKTvrIT0Xz5tfdfp8-AeDtOn6hIzP2vvmLNMzsons5M0XZj37mhfSsH5hQbvHgl_AZOMMthNtpBiuWyjWCCGZSkdpMcjd1LD3vz2nO1nkRzlONpBTFN4TYhR4_thEhSN9i-6q6whGF2giadiOAKv6Btzibo-SqkgpuT74tGrY_Utt7jCdn3HdNgJnsJC_AclrTCfkCFQ-V0DMY6lAcXsIi5SI_1CbLvKL1dKB7tJxK6P29cZADS2rP-_tgi_wCznxRUiIrAI7Zt6Vuk4CTUtkpn_4tEYJmxX_VK9asGNCoQsWWhccACwYJzJ9vxOa1lAkXPtCVIA1ohJWtuKeo_vFNPytdufk2vLweWAoRkApMJo_7HQ8u93hFJeKTCbaQxqFgyH2BNemwK11jYH6PsWJ9JR358aRNJR4nkuGfasxRBK-DiMInVE_GGq2dkTaCbmkb6o06gKlJ5C6-cXPIKfUpy2jYogKlam1F7-LBy6x9tla8HYB5HEw04c2e9Gr6RMblAZwstIuzyp8Ud4ECU15dK5u5GpreyLPQSkHzFp1P4bP5Ph=w2108-h1407-no?authuser=0");
+    background-image: url("About-Me/background.JPG");
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
+    margin: 0;
+    text-align: center;
 }
 
 .title {
+    font-size: min(100px, 7.5vw);
     font-weight: 1000;
-    font-size: 100px;
-    color: black;
-    margin-top: 300px;
+    color: #0088A9;
     text-align: center;
-    text-shadow: 2px 2px white;
+    text-shadow: 0.15vw 0.15vw black;
+    margin-top: min(300px, 25vw);
 }
 
 .objective {
+    font-size: max(20px, 2vw);
     font-weight: 500;
-    font-size: 28px;
     color: white;
     text-align: center;
-    margin-left: 175px;
-    margin-right: 175px;
-    text-shadow: 2px 2px black;
+    text-shadow: 0.15vw 0.15vw black;
+    margin: 0 8vw 0 8vw;
 }
 
 .subtitle {
+    font-size: min(72px, 7vw);
     font-weight: 750;
-    font-size: 72px;
-    color: black;
-    margin-top: 300px;
+    color: #0088A9;
     text-align: center;
-    text-shadow: 2px 2px white;
+    text-shadow: 0.15vw 0.15vw black;
+    margin-top: min(300px, 25vw);
 }
 
 .subtext {
+    font-size: max(18px, 1.75vw);
     font-weight: 450;
-    font-size: 24px;
     color: white;
     text-align: center;
-    margin-left: 175px;
-    margin-right: 175px;
-    text-shadow: 2px 2px black;
+    text-shadow: max(1.5px, 0.15vw) max(1.5px, 0.15vw) black;
+    margin: 7vw 1.75vw 0 1.75vw;
+}
+
+.hobby {
+    font-size: max(24px, 2.5vw);
+    font-weight: 600;
+    color: #0088A9;
+    text-align: center;
+    text-shadow: max(1.5px, 0.1vw) max(1.5px, 0.1vw) white;
+    margin: 4.5vw 1.75vw 0 1.75vw;
 }
 
 img {
+    margin: 1.75vw;
+    height: 20vw;
+    width: auto;
+}
+
+.poster {
+    width: 12.5%;
+    height: auto;
+}
+
+.iframe {
+    height: 400px;
+    width: auto;
+}
+
+@media screen and (max-width: 1000px) {
+    img {
+        margin: 1.75vw 1vw 8vw auto;
+        height: auto;
+        width: 98%;
+    }
+
+    .subtext {
+        margin-bottom: 12vw;
+    }
+
+    .poster {
+        height: auto;
+        width: 25%;
+    }
+}
+
+.virginia {
     float: left;
 }
 
+.woodstock {
+    float: right;
+}
+
+.hobbies .subtext {
+    margin: 2vw 8vw 1vw 8vw;
+}
+
+.subtext:last-of-type {
+    margin-bottom: 6vw;
+}

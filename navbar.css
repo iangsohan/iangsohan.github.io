@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+
+* {
+    cursor: default;
+    font-family: "Cabin", sans-serif;
+    user-select: none;
+}
+
+.navbar {
+    width: 100%;
+    max-height: 75px;
+    text-align: left;
+    background-color: black;
+    position: fixed;
+    top: 0;
+}
+
+.navbar li, a {
+    font-weight: 500;
+    font-size: max(11px, 1.6vw);
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    transition: all 0.3s ease 0s;
+}
+
+.navbar li:first-of-type {
+    margin-right: 11vw;
+}
+
+@media screen and (max-width: 750px) {
+    .navbar {
+        text-align: center;
+    }
+
+    .navbar li:first-of-type {
+        margin-right: 0;
+    }
+}
+
+.navbar a {
+    cursor: pointer;
+}
+
+.navbar ul {
+    display: inline-block;
+    margin: 0.75vw;
+    padding: 0.5vw;
+    background-color: black;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 0px 3vw;
+    background-color: black;
+}
+
+#current {
+    color: #0088A9;
+    font-weight: 1000;
+}
+
+.navelement:hover {
+    color: #0088A9;
+}
+
+#current:hover {
+    color: white;
+}
+
+.contact {
+    color: black;
+    font-size: max(12px, 1.6vw);
+    padding: 0.4vw 0.8vw 0.4vw 0.8vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    text-align: left;
+}
+
+.contact:hover {
+    color: white;
+    background-color: #0088A9;
+}
+
+.dropdown-content {
+    margin: 3vw 0 0 0;
+    display: none;
+    position: fixed;
+    text-align: left;
+    background-color: black;
+    min-width: min(350px, 60vw);
+    box-shadow: 0.5vw 0.5vw 0.75vw rgba(5,5,5,0.5);
+    cursor: text;
+}
+
+.dropdown-content a {
+    font-size: max(14px, 1vw);
+    color: white;
+    padding: 12px 16px;
+    display: block;
+    transition: all 0.5s ease 0s;
+    background-color: #0088A9;
+    user-select: all;
+}
+
+.dropdown-content a:hover {
+    color: #0088A9;
+    background-color: rgba(255,255,255,0.75);
+}
+
+.show {
+    display: block;
+}
+
+.trial {
+    text-align: left;
+}

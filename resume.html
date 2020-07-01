@@ -5,20 +5,34 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Ian Sohan</title>
         <link rel="stylesheet" href="resumeStyles.css">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <script data-ad-client="ca-pub-1612928934411454" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     </head>
     <body>
-        <header>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="index.html">About Me</a></li>
-                    <li><a href="bucketlist.html">Bucket List</a></li>
-                    <li><a href="photos.html">Photos</a></li>
-                </ul>
-            </nav>
-        </header>
-        <img width="770" height="1000" src="resume.jpg">
-        <img width="770" height="1000" src="transcript.jpg">
+        <nav class="navbar">
+            <ul>                    
+                <li>
+                    <div class="dropdown">
+                        <a type="button" onclick="myFunction()" class="contact">Contact</a>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a class="con-element">Ian Sohan</a>
+                            <a class="con-element">(719) 244-7018</a>
+                            <a class="con-element">iangsohan@gmail.com</a>
+                            <a class="con-element" href="https://www.linkedin.com/in/ian-sohan/" target="_blank">linkedin.com/in/ian-sohan</a>
+                            <a class="con-element" href="https://github.com/iangsohan" target="_blank">github.com/iangsohan</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a class="navelement" href="home.html">About Me</a></li>
+                <li><a id="current" class="navelement" href="resume.html">Resume</a></li>
+                <li><a class="navelement" href="projects.html">Projects</a></li>
+                <li><a class="navelement" href="bucketlist.html">Bucket List</a></li>
+                <script src="Scripts/contacts.js"></script>
+            </ul>
+        </nav>
+        <img src="Resume/resume.jpg">
+        <li class="download"><a href="Resume/Ian_Sohan_Resume.pdf" target="_blank">Download: Ian_Sohan_Resume.pdf</a></li>
+        <img src="Resume/transcript.jpg">
+        <li class="download"><a href="Resume/Ian_Sohan_Transcript.pdf" target="_blank">Download: Ian_Sohan_Transcript.pdf</a></li>
     </body>
 </html>

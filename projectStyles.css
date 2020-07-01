@@ -1,0 +1,61 @@
+@import "navbar.css";
+
+body {
+    background-image: url("https://tskp.com/uploads/1000010/153625562948/6_TSKP_WOODSTOCK_ACADEMY_MASTER_PLAN_EXPANSION_EXTERIOR_DETAIL_HISTORIC_ACADEMY_BUILDING-1400-0x71x1200x797_q85.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    margin: 0;
+}
+
+video {
+    box-shadow: 10px 10px 15px rgba(5,5,5,0.5);
+    margin-top: max(50px, 7vw);
+    position: relative;
+    height: max(500px, 37.5vw);
+    width: auto;
+    z-index: -1;
+}
+
+.project {
+    width: 50%;
+    float: left;
+}
+
+@media screen and (max-width: 1250px) {
+    .project {
+        width: 100%;
+    }
+}
+
+.project {
+    list-style: none;
+}
+
+.project h1 {
+    font-size: 36px;
+    text-align: center;
+    color: white;
+    text-shadow: 0.2vw 0.2vw black;
+    margin: 8px auto 0 auto;
+    display: table;
+}
+
+.download a {
+    font-size: max(14px, 1.25vw);
+    font-weight: 1000;
+    color: black;
+    background-color: rgb(255, 255, 255, 0.5);
+    margin: min(12px, 1vw) auto 1vw auto;
+    padding: 10px 15px 10px 15px;
+    border-radius: 25px;
+    display: table;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.project a:hover {
+    color: white;
+    background-color: rgba(40, 132, 194, 0.5)
+}
