@@ -44,9 +44,9 @@ window.onclick = function(event) {
 
 ## Installation
 
-1. Download All Files in [Website](https://github.com/iangsohan/Website) into the same folder.
-2. Click on "home.html".
-3. Navigate as Directed.
+1. Download All Files in [Website](https://github.com/iangsohan/Website) into the same folder
+2. Click on "home.html"
+3. Navigate as Directed
 
 ## License
 
